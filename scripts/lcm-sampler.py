@@ -3,8 +3,8 @@ import tqdm
 import k_diffusion.sampling
 from modules import sd_samplers_common, sd_samplers_kdiffusion, sd_samplers
 
-NAME = 'LCM'
-ALIAS = 'lcm'
+NAME = 'LCM sample'
+ALIAS = 'lcm_sample'
 
 @torch.no_grad()
 def sample_lcm(model, x, sigmas, extra_args=None, callback=None, disable=None, noise_sampler=None):
